@@ -23,7 +23,7 @@
 
 'use strict';
 
-const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели в етом  месяце?', '');
 const personalMovieDB = {
     count: numberOfFilms,
     movies: {},
