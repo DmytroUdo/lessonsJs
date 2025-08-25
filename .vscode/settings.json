@@ -1,8 +1,18 @@
 {
-    "cSpell.words": [
-        "автомобиля",
-        "длина",
-        "ширина",
-        "numver"
-    ]
+  "cSpell.language": "en,uk,ru",
+  "cSpell.enabled": true,
+  "cSpell.allowCompoundWords": true,
+  "cSpell.ignoreWords": [],
+  "cSpell.ignorePaths": [
+    "node_modules/**",
+    "dist/**",
+    "build/**",
+    ".git/**"
+  ],
+  "files.exclude": {
+    "**/.git": true,
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/build": true
+  }
 }
