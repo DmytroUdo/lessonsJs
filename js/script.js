@@ -1,38 +1,59 @@
 "use strict";
 
-// if (4 == 2) {
-//     console.log("Ok!");
+// const hamburger = 3;
+// const fries = 1;
+// const cola = 0;
+
+// console.log(hamburger === 3 && cola  && fries); // 1 - true, 0 - false
+
+// console.log(1 && 0); // 0
+// console.log(1 && 5); // 5
+// console.log(null && 5); // null
+// console.log(0 && "Hello"); // 0
+// console.log(1 && 2 && 3); // 3
+// console.log(1 && 2 && null && 3); // null
+// console.log(1 && 2 && 3 && 0 && 4); // 0
+// console.log(1 && 2 && 3 && 4); // 4 
+
+// if (hamburger === 3  && fries === 1 && cola === 1) {
+//     console.log("Done!");
+// }   else {
+//     console.log("Not today!");
+// }
+
+
+// Тут використовуються логічні оператори:
+// && ("І") – обидві умови мають бути істинними, інакше повертає false.
+// || ("АБО") – достатньо, щоб хоча б одна умова була істинною.
+
+// if (hamburger && cola || fries && cola) {
+//     console.log("Done!");
 // } else {
-//     console.log("Error");
-// }
+//     console.log("Not today!");
+// }   
 
 
 
-const num = 50;
+const hamburger = 3;
+const fries = 2;
+const cola = 0;
+const nuggets = 2;
 
 
-// if (num < 49) {
-//     console.log("Error");
-// } else if (num > 100) {
-//     console.log("Много");
-// }
-// else {
-//     console.log("Ok!");
-// }
+if (hamburger === 3 && fries  === 2 ||  cola === 2 && nuggets) {
+    console.log("Done!");
+}   else {
+    console.log("Not today!");
+}
 
-// (num === 50) ? console.log("Ok!") : console.log("Error");
+console.log(hamburger === 3 && fries  === 2 ||  cola === 2 && nuggets); // true 
 
-switch (num) {
-    case 49:
-        console.log("Неверно");
-        break;
-    case 100:
-        console.log("Неверно");
-        break;
-    case 50:
-        console.log("Верно");
-        break;
-    default:
-        console.log("Не в этот раз");
-        break;
-}   
+
+let johnReport, alexReport, samReport, mariaReport = "done";
+console.log(johnReport || alexReport || samReport || mariaReport); // done
+
+
+console.log(!0); // true
+console.log(!1); // false
+console.log(!!1); // true
+console.log(!!0); // false      
