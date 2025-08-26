@@ -1,14 +1,38 @@
-// Просте if-else
-let age = 20;
+"use strict";
 
-if (age >= 18) {
-    console.log("Ти повнолітній");
-} else {
-    console.log("Ти ще дитина");
-}
+// if (4 == 2) {
+//     console.log("Ok!");
+// } else {
+//     console.log("Error");
+// }
 
-// ----------------------------
 
-// Тернарний оператор
-let canVote = (age >= 18) ? "Можеш голосувати" : "Не можеш голосувати";
-console.log(canVote);
+
+const num = 50;
+
+
+// if (num < 49) {
+//     console.log("Error");
+// } else if (num > 100) {
+//     console.log("Много");
+// }
+// else {
+//     console.log("Ok!");
+// }
+
+// (num === 50) ? console.log("Ok!") : console.log("Error");
+
+switch (num) {
+    case 49:
+        console.log("Неверно");
+        break;
+    case 100:
+        console.log("Неверно");
+        break;
+    case 50:
+        console.log("Верно");
+        break;
+    default:
+        console.log("Не в этот раз");
+        break;
+}   
