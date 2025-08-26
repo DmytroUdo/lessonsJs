@@ -67,3 +67,24 @@ function test() {
     console.log("Done");
 }
 test();
+
+function doNothing() {};
+console.log(doNothing() === undefined);     
+
+
+function sayHello(name) {
+    return `Hello, ${name}!`; 
+
+}
+console.log(sayHello("Ivan"));
+console.log(sayHello("Alex"));
+console.log(sayHello("Nikolay"));
+console.log(sayHello("Irina"));
+
+function returnNeighboringNumbers(num) {
+    return [num - 1, num, num + 1];
+
+}
+console.log(returnNeighboringNumbers(5));
+console.log(returnNeighboringNumbers(10));
+console.log(returnNeighboringNumbers(-2));
